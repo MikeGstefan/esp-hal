@@ -554,7 +554,7 @@ where
 /// UART (Full-duplex)
 pub struct Uart<'d, Dm, T = AnyUart> {
     rx: UartRx<'d, Dm, T>,
-    tx: UartTx<'d, Dm, T>,
+    pub tx: UartTx<'d, Dm, T>,
 }
 
 /// UART (Transmit)
